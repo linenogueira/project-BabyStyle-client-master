@@ -462,7 +462,7 @@ button {
   
 }
 .home-hero {
-  background-image: url("/public/images/Organize-clothing.jpeg");
+  background-image: url("/public/images/GettyImages-1313979466-1620x1080.jpg.optimal.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -478,8 +478,8 @@ button {
 
 .hero-text {
   text-align: right;
-  color:#1e1b1b; /* Text color */
-  background-color: rgba(105, 104, 104, 0.2); /* Background color with transparency */
+  color:#a5a58d; /* Text color */
+  background-color: rgba(54, 70, 48, 0.5); /* Background color with transparency */
   padding: 20px;
   border-radius: 10px; /* Optional: Add rounded corners */
   font-family: "Montserrat", sans-serif;

@@ -20,11 +20,11 @@ function HomePage() {
       <div>
         <article>
           <h3>Organize your clothes</h3>
-          <img src="/images/Folded-clothing.jpg" alt="" width={300}/>
+          <img src="/images/babyorganize.jpg" alt="" width={300}/>
         </article>
         <article>
           <h3>Keep track of laundry</h3>
-          <img src="/images/laundry.jpg" alt="" width={300}/>
+          <img src="/images/BabyLaundry.jpg" alt="" width={300}/>
         </article>
       
         
