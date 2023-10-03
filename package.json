@@ -1,5 +1,5 @@
 {
-  "name": "project-management-client",
+  "name": "template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@devexpress/dx-react-core": "^4.0.5",
+    "@devexpress/dx-react-scheduler": "^4.0.5",
+    "@devexpress/dx-react-scheduler-material-ui": "^4.0.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.7",
+    "@mui/material": "^5.14.7",
     "axios": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
