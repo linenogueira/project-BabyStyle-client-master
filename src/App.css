@@ -44,7 +44,7 @@
   border-radius: 5px;
   padding: 5px; 
   text-align: center;
-  overflow: scroll;
+
   
   
   
@@ -479,7 +479,7 @@ button {
 .hero-text {
   text-align: right;
   color:#a5a58d; /* Text color */
-  background-color: rgba(54, 70, 48, 0.5); /* Background color with transparency */
+  background-color: rgba(47, 62, 40, 0.5); /* Background color with transparency */
   padding: 20px;
   border-radius: 10px; /* Optional: Add rounded corners */
   font-family: "Montserrat", sans-serif;
