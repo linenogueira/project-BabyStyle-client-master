@@ -7,8 +7,8 @@ import DryCleaningIcon from "@mui/icons-material/DryCleaning";
 
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-const API_URL = "https://style-script.onrender.com";
-// const API_URL = "http://localhost:5005";
+
+ const API_URL = "http://localhost:5005";
 
 function ClothingDetailsPage() {
   const [clothing, setClothing] = useState(null);

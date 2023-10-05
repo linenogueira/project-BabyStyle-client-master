@@ -191,7 +191,7 @@ function Navbar() {
               sx={{ display: { xs: 'flex', sm: 'block' } }}
             >
          {/* <Link to='/' > <img src='../../../public/images/Horizontal-logo.svg' className='nav-logo'/></Link> */}
-           <Link to='/' className='nav-logo'><strong><p>BABY STYLE</p></strong></Link>
+           <Link to='/' className='nav-logo'><strong><p>CLOSET STYLE</p></strong></Link>
             </Typography>
            
             <Box sx={{ flexGrow: 1 }} />

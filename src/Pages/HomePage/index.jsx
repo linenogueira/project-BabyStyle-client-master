@@ -9,7 +9,7 @@ function HomePage() {
     <div className="home-hero">
       <div className="hero-text">
         
-      <h1>Baby Closet Planner</h1>
+      <h1>Your Closet Planner</h1>
       </div>
     </div>
   

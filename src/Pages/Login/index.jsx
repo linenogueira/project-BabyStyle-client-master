@@ -3,8 +3,8 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/auth.context";
 
-const API_URL = "https://style-script.onrender.com";
-// const API_URL = "http://localhost:5005";
+
+ 
 
 function LoginPage() {
   const [email, setEmail] = useState("");
