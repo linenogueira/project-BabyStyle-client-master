@@ -19,9 +19,11 @@ function LoginPage() {
     event.preventDefault();
     const requestBody = { email, password };
 
+    // console.log("JWT TOKEN", response.data.authToken);
     axios
-      .post(`${API_URL}/auth/login`, requestBody)
+      .post(`${API_URL}/auth/login`, requestBody )
       .then((response) => {
+        console.log("JWT TOKEN", response.data.authToken);
         storeToken(response.data.authToken);
         authenticateUser();
         navigate("/");
