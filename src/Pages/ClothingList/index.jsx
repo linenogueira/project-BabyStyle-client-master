@@ -5,7 +5,8 @@ import { useParams } from "react-router-dom";
 import "../../index.css";
 
 
- const API_URL = "http://localhost:5005";
+const API_URL = "http://localhost:5005";
+
 
 function ClothingListPage() {
   const [sortedClothing, setSortedClothing] = useState({});

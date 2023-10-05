@@ -1,8 +1,8 @@
 
-Closet Style Virtual Closet Application
+My Closet Virtual Closet Application
 
 
-Welcome to Closet Style! This web application allows users to manage their clothing items, organize them into categories, add notes, filter by season, search for items. Whether you're a fashion enthusiast or simply want to keep your wardrobe organized, this application has you covered.
+Welcome to My Closet! This web application allows users to manage their clothing items, organize them into categories, add notes, filter by season, search for items. Whether you're a fashion enthusiast or simply want to keep your wardrobe organized, this application has you covered.
 
 **Features**
 

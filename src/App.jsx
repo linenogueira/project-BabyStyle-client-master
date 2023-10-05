@@ -15,7 +15,7 @@ import IsPrivate from "./Components/isPrivate";
 import IsAnon from "./Components/isAnon";
 import './App.css';
 
-
+const API_URL = "http://localhost:5005";
 
 function App() {
  

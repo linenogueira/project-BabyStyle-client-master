@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import {useContext} from 'react'; 
 import { AuthContext } from '../../Context/auth.context';
-import {useState} from "react"
 
-import { styled, alpha } from '@mui/material/styles';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,7 +13,7 @@ import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
+
 
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import DryCleaningIcon from '@mui/icons-material/DryCleaning';
@@ -173,25 +172,15 @@ function Navbar() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="fixed" sx={{ backgroundColor: "#f8f8f8"}}>
           <Toolbar>
-            {/*}
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
-    */}
+    
             <Typography
               variant="h6"
               noWrap
               component="div"
               sx={{ display: { xs: 'flex', sm: 'block' } }}
             >
-         {/* <Link to='/' > <img src='../../../public/images/Horizontal-logo.svg' className='nav-logo'/></Link> */}
-           <Link to='/' className='nav-logo'><strong><p>CLOSET STYLE</p></strong></Link>
+         {}
+           <Link to='/' className='nav-logo'><strong><p>MY CLOSET </p></strong></Link>
             </Typography>
            
             <Box sx={{ flexGrow: 1 }} />
@@ -206,21 +195,10 @@ function Navbar() {
              
             <CustomNavbar /> 
             </Box>
-         {/*   <Box sx={{ display: { xs: 'flex', md: 'flex' } }}>
-              <IconButton
-                size="large"
-                aria-label="show more"
-                aria-controls={mobileMenuId}
-                aria-haspopup="true"
-                onClick={handleMobileMenuOpen}
-                color="inherit"
-              >
-                <MoreIcon />
-              </IconButton>
-    </Box> */}
+        
           </Toolbar>
         </AppBar>
-      { /* {renderMobileMenu} */}
+      
         {renderMenu}
         
       </Box>
