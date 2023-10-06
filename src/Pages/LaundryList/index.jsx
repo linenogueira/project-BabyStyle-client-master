@@ -7,8 +7,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 
-
-const API_URL = "http://localhost:5005";
+ const API_URL = "http://localhost:5005";
 
 function LaundryList() {
   const [laundry, setLaundry] = useState([]);
