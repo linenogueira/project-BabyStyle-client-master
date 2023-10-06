@@ -3,8 +3,8 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/auth.context";
 
-const API_URL = "http://localhost:5005";
- 
+
+ const API_URL = "http://localhost:5005";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -19,11 +19,9 @@ function LoginPage() {
     event.preventDefault();
     const requestBody = { email, password };
 
-    // console.log("JWT TOKEN", response.data.authToken);
     axios
-      .post(`${API_URL}/auth/login`, requestBody )
+      .post(`${API_URL}/auth/login`, requestBody)
       .then((response) => {
-        console.log("JWT TOKEN", response.data.authToken);
         storeToken(response.data.authToken);
         authenticateUser();
         navigate("/");
@@ -67,3 +65,5 @@ function LoginPage() {
 }
 
 export default LoginPage;
+
+

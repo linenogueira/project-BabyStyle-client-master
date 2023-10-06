@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import {useContext} from 'react'; 
 import { AuthContext } from '../../Context/auth.context';
+import {useState} from "react"
 
-
+import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,11 +14,12 @@ import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-
+import MenuIcon from '@mui/icons-material/Menu';
 
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import DryCleaningIcon from '@mui/icons-material/DryCleaning';
-
+import LuggageIcon from '@mui/icons-material/Luggage';
+import MoreIcon from '@mui/icons-material/MoreVert';
 
 
 
@@ -25,6 +27,7 @@ function CustomNavbar() {
   const {isLoggedIn, user, logOutUser} = useContext(AuthContext);
   return (
     <nav className="navbar-container">
+   
       <div>
         <Link to="/clothing" className='link'>
           Closet
@@ -142,6 +145,21 @@ function Navbar() {
           <p>Laundry</p>
         </MenuItem>
 
+        <MenuItem>
+          <IconButton
+            size="small"
+            aria-label="show 17 new notifications"
+            color="inherit"
+          >
+             
+            <Badge badgeContent={user?.packing?.length} color="error">
+              <LuggageIcon/>
+            </Badge>
+          </IconButton>
+          <p>Luggage</p>
+        </MenuItem>
+      
+
          <Link to="/clothing" >
          <p className="mobile-link">My Closet</p> 
         </Link>
@@ -172,15 +190,25 @@ function Navbar() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="fixed" sx={{ backgroundColor: "#f8f8f8"}}>
           <Toolbar>
-    
+            {/*}
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+    */}
             <Typography
               variant="h6"
               noWrap
               component="div"
               sx={{ display: { xs: 'flex', sm: 'block' } }}
             >
-         {}
-           <Link to='/' className='nav-logo'><strong><p>MY CLOSET </p></strong></Link>
+        
+           <Link to='/' className='nav-logo'><strong><p>MY CLOSET</p></strong></Link>
             </Typography>
            
             <Box sx={{ flexGrow: 1 }} />
@@ -192,18 +220,62 @@ function Navbar() {
                 </Badge>
                 </Link>
               </IconButton>
+              <IconButton
+                size="small"
+                aria-label="show 17 new notifications"
+                color="inherit"
+              >
+                <Link to='/packing' className='packing-link'>
+                <Badge badgeContent={user?.packing?.length} color='primary' style={{color: 'gray'}}>
+                  <LuggageIcon />
+                </Badge>
+                </Link>
+                
+              </IconButton>
              
             <CustomNavbar /> 
             </Box>
-        
+         {/*   <Box sx={{ display: { xs: 'flex', md: 'flex' } }}>
+              <IconButton
+                size="large"
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                onClick={handleMobileMenuOpen}
+                color="inherit"
+              >
+                <MoreIcon />
+              </IconButton>
+    </Box> */}
           </Toolbar>
         </AppBar>
-      
+      { /* {renderMobileMenu} */}
         {renderMenu}
         
       </Box>
     );
 
-
+  
+   /* <nav>
+    <div>
+    <Link to="/">
+        <button>Home</button>
+    </Link>
+    </div>
+    {isLoggedIn? (
+      <div>
+        <button onClick={logOutUser}>Logout</button>
+        <p>{user && user.name}</p>
+      </div>
+    ): 
+    (
+      <div>
+        <Link to="/signup"><button>Signup</button></Link>
+        <Link to="/login"><button>Login</button></Link>
+      </div>
+    )
+  } 
+    </nav>*/
+  
 }
 export default Navbar;

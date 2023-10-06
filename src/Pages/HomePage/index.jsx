@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const API_URL = "http://localhost:5005";
+
 
 function HomePage() {
   
@@ -9,12 +9,13 @@ function HomePage() {
     <div className="home-hero">
       <div className="hero-text">
         
-      <h1>Your Closet Planner</h1>
+      <h1>Personal Closet Planner</h1>
       </div>
     </div>
-  
      
-   
+    <div className="homePage">
+     
+    </div>
     <div className="sections">
     <section className="features">
       <div>
@@ -24,18 +25,24 @@ function HomePage() {
         </article>
         <article>
           <h3>Keep track of laundry</h3>
-          <img src="/images/laundry.jpg" alt="" width={300}/>
+          <img src="/images/laundry-image.jpg" alt="" width={300}/>
         </article>
-      
+        <article>
+          <h3>Create your packing list</h3>
+          <img src="/images/luggage.jpg" alt="" width={300}/>
+        </article>
         
       </div>
     </section>
+
     </div>
     <footer className="footer">
-    
+      <div >
         <div className="footer-text">
           
         
+        
+        </div>
       </div>
 
     </footer>

@@ -3,18 +3,18 @@ import { AuthContext } from "../../Context/auth.context";
 import axios from "axios";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import DryCleaningIcon from "@mui/icons-material/DryCleaning";
-
-
+import LuggageIcon from "@mui/icons-material/Luggage";
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 
-const API_URL = "http://localhost:5005";
+ const API_URL = "http://localhost:5005";
 
 function ClothingDetailsPage() {
   const [clothing, setClothing] = useState(null);
   const navigate = useNavigate();
   const { clothingId } = useParams();
   const [isInLaundry, setIsInLaundry] = useState(false);
+  const [isInPacking, setIsInPacking] = useState(false);
   const [noteContent, setNoteContent] = useState("");
 
   const { storeToken, authenticateUser } = useContext(AuthContext);
@@ -96,6 +96,30 @@ function ClothingDetailsPage() {
       }
     }
     addToLaundryRequest();
+  };
+
+ 
+  const addToPacking = () => {
+    async function addToPackingRequest() {
+      try {
+        const storedToken = localStorage.getItem("authToken");
+        await axios.post(
+          `${API_URL}/api/clothing/add-to-packing/${clothingId}`,
+          null,
+          {
+            headers: {
+              Authorization: `Bearer ${storedToken}`,
+            },
+          }
+        );
+        refreshClothing();
+        await tokenUpdate();
+        navigate("/clothing");
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    addToPackingRequest();
   };
 
   const deleteClothing = () => {
@@ -219,14 +243,17 @@ function ClothingDetailsPage() {
          { clothing.careInstructions && (<p><strong>Care Label:</strong> {clothing.careInstructions}</p> )}
          { clothing.season && (<p><strong>Weather:</strong>  {clothing.season}</p> )}
 
-        
+         
 
           <button onClick={addToLaundry} disabled={isInPacking}>
             <DryCleaningIcon />
             {/*  {isInPacking ? "Added to Packing" : "Add to Packing"} */}
           </button>
 
-          
+          <button onClick={addToPacking} disabled={isInPacking}>
+            <LuggageIcon />
+            {/*  {isInPacking ? "Added to Packing" : "Add to Packing"} */}
+          </button>
           
 
            {/* Add Note */}

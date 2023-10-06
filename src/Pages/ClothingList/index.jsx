@@ -5,8 +5,7 @@ import { useParams } from "react-router-dom";
 import "../../index.css";
 
 
-const API_URL = "http://localhost:5005";
-
+ const API_URL = "http://localhost:5005";
 
 function ClothingListPage() {
   const [sortedClothing, setSortedClothing] = useState({});
@@ -119,7 +118,7 @@ function ClothingListPage() {
           <div className="clothing-grid">
             {items.map((clothing) => (
               <div key={clothing._id} className="clothing-item">
-                <Link to={`/c/${clothing._id}`}>
+                <Link to={`/clothing/${clothing._id}`}>
                   <img src={clothing.image} alt={clothing.title} />
                   <div className="card-content">
                     <h3 className="clothing-title">{clothing.title}</h3>
@@ -135,3 +134,4 @@ function ClothingListPage() {
 }
 
 export default ClothingListPage;
+
