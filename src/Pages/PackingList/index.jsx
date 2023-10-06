@@ -39,10 +39,6 @@ function PackingList() {
           },
         });
         setPacking(response.data.packing);
-        /* const response = await axios.get("/api/Packing");
-          if (response.status === 200) {
-            setPacking(response.data);
-          } */
       } catch (error) {
         console.error("Error getting packing:", error);
       }
@@ -61,7 +57,6 @@ function PackingList() {
         },
       });
 
-      // After successfully removing the item, update the Packing list
       const updatedPacking = packing.filter((item) => item._id !== itemId);
       await tokenUpdate();
       setPacking(updatedPacking);
@@ -70,18 +65,16 @@ function PackingList() {
     }
   };
 
-  // Function to remove all items from the laundry list
   const handleDeleteAll = async () => {
     try {
       const storedToken = localStorage.getItem("authToken");
 
-      // Step 1: Clear the laundry list in local storage
+      
       localStorage.removeItem("packingList");
 
-      // Step 2: Clear the laundry state in your component
+     
       setPacking([]);
 
-      // Step 3: Send a request to your backend to delete all items
       const response = await axios.delete(
         `${API_URL}/api/remove-from-packing/all`,
         {

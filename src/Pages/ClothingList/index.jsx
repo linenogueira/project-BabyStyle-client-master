@@ -35,7 +35,7 @@ function ClothingListPage() {
           }
         );
 
-        // Filter clothing items by name based on search query (case-insensitive)
+   
         const filteredByName = filteredClothing.filter(
           (clothing) =>
             clothing.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -43,8 +43,6 @@ function ClothingListPage() {
         );
 
 
-
-        // Create an object to store clothing items sorted by type
 
         
         // Define the desired order of clothing types
@@ -111,7 +109,8 @@ function ClothingListPage() {
           />
         </div>
       </div>
-      {/* Display clothing items */}
+
+
       {Object.entries(sortedClothing).map(([type, items]) => (
         <div key={type} className="clothing-list">
           <h2>{type.toUpperCase()}</h2>

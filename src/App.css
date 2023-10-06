@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 .read-the-docs {
   color: #888;
 }
@@ -34,21 +33,16 @@
   grid-auto-rows: 55vh;
   padding-bottom: 0;
   
-   /* Adjust the height as needed */
   gap: 1rem; /* Adjust the gap between items as needed */
 }
 
 .clothing-item {
   
-  border: 1px solid #ccc; /* Add a border around each item if desired */
+  border: 1px solid #ccc; 
   border-radius: 5px;
   padding: 5px; 
   text-align: center;
-  overflow: scroll;
-  
-  
-  
-  
+
 }
 
 
@@ -69,42 +63,37 @@
 }
 .search-bar {
   display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  background-color: #fff; /* Set background color as needed */
+  align-items: center; 
+  justify-content: center; 
+  background-color: #fff; 
   padding: 10px;
   border-radius: 5px;
-  
- 
+   
 }
 
 .weather-search {
   background-color: #f0f0f0;
   margin-right: 15px;
-   /* Background color for weather search */
 }
 
 .clothing-search {
-  background-color: #f0f0f0; /* Background color for clothing search */
+  background-color: #f0f0f0; 
 }
 
-/* Style labels, select, and input as needed */
 .search-bar label {
-  margin-right: 10px; /* Add spacing between label and input/select */
+  margin-right: 10px;
 }
 
 .search-bar select,
 .search-bar input[type="text"] {
-  padding: 5px ; /* Adjust padding as needed */
-  border: 1px solid #ccc; /* Add border as needed */
-  border-radius: 4px; /* Add border radius as needed */
+  padding: 5px ; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
 }
 
 .search-bar select {
-  margin-right: 10px; /* Add spacing between select and input */
+  margin-right: 10px; 
 }
-
-
 
 .search-bars {
   margin-top: 70px;
@@ -122,12 +111,10 @@
   align-items: center;
   justify-content: space-between;
   font-family: 'Monserrat' , sans-serif;
-   /* Vertically align items to the center */
 }
-
 .navbar-container > div {
-  display: flex; /* Make inner divs flex containers */
-  gap: 8px; /* Adjust the gap between buttons as needed */
+  display: flex; 
+  gap: 8px; 
 }
 
 .link {
@@ -153,16 +140,12 @@
 
 .clothing-item-added {
   
-  border: 1px solid #ccc; /* Add a border around each item if desired */
+  border: 1px solid #ccc; 
   border-radius: 5px;
   padding: 5px; 
   text-align: center;
-  overflow: scroll;
-  
-  
   
 }
-
 
 .clothing-item-added img {
   width: 100%;
@@ -177,9 +160,6 @@
   background-color: #eeeeed;
   
 }
-
-
-
 
 .button-note {
   background-color: white;
@@ -197,7 +177,7 @@ ul {
   background-image: url("../public/images/Hangers.png");
   background-size: cover;
   display: flex;
-  justify-content: center; /* Horizontally center */
+  justify-content: center; 
   align-items: center; 
   min-height: 100vh; 
   
@@ -205,28 +185,26 @@ ul {
 
 .clothing-details {
   margin-top: 80px;
-  max-width: 400px; /* Adjust the width as needed */
-  width: 100%; /* Make it as wide as its container */
+  max-width: 400px; 
+  width: 100%; 
   padding: 10px;
   background-color: #fffcf7;
   border-radius: 10px;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); 
   text-align: center;
- 
-  
+   
 }
 
 .clothing-details img {
   width: 100%;
-  height: 40vh; /* Adjust the max height as needed */
+  height: 40vh; 
   object-fit: cover;
-  border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+  border-radius: 10px 10px 0 0; 
   
 }
 
 .clothing-details h3 {
-  margin-top: 10px;
-  
+  margin-top: 10px; 
 }
 
 .clothing-details p {
@@ -246,7 +224,7 @@ ul {
 }
 
 .clothing-details button:disabled {
-  background-color: #ccc; /* Adjust the disabled button color as needed */
+  background-color: #ccc; 
   cursor: not-allowed;
 }
 
@@ -267,31 +245,26 @@ ul {
   margin-top: 10px;
 }
 
-/* Additional styling for icons */
-
-/* Center the form vertically and horizontally */
 .clothing-create {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-image: url("../public/images/Hangers.png");
-  background-size: cover; /* Set a background color */
+  background-size: cover; 
 }
 
-/* Style the form container */
 .clothing-create form {
-  background-color: #fffcf7; /* Form background color */
+  background-color: #fffcf7; 
   padding: 20px;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Shadow */
-  max-width: 500px; /* Limit form width for responsiveness */
-  width: 100%; /* Full width on smaller screens */
+  border-radius: 10px; 
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); 
+  max-width: 500px; 
+  width: 100%; 
   margin-top: 100px;
   padding-right: 40px;
 }
 
-/* Style labels and inputs */
 .clothing-create label {
   display: block;
   margin-bottom: 10px;
@@ -314,54 +287,46 @@ ul {
   padding: 5px;
 }
 
-/* Style the submit button */
 .clothing-create button {
-  background-color: gray; /* Button background color */
-  color: #fff; /* Text color */
+  background-color: gray; 
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .clothing-create button:hover {
-  background-color: #696a6b; /* Hover color */
+  background-color: #696a6b; 
 }
 
-
-
-/* Center radio buttons and checkboxes */
 .clothing-create input[type="radio"],
 .clothing-create input[type="checkbox"] {
   vertical-align: middle;
   margin: 5px;
 }
 
-/* Style the radio buttons container */
 .radio-buttons {
-  display: flex; /* Display the radio buttons side by side */
+  display: flex; 
 }
 
-/* Style individual radio button labels */
 .radio-buttons label {
-  display: inline-flex; /* Display labels and inputs in a row */
-  align-items: center; /* Vertically center the content */
-  margin-right: 20px; /* Add spacing between radio buttons */
+  display: inline-flex; 
+  align-items: center; 
+  margin-right: 20px; 
 }
 
-/* Adjust the spacing between radio button labels and inputs if needed */
 .radio-buttons input[type="radio"] {
-  margin-right: 5px; /* Add spacing between label and radio button */
+  margin-right: 5px;
 }
 
-/* Add responsive styles */
 @media (max-width: 488px) {
   .clothing-create {
-    padding: 20px; /* Add some padding to the container */
+    padding: 20px; 
   }
 
   .clothing-create form {
-    margin-top: 20px; /* Reduce top margin */
-    padding-right: 20px; /* Reduce right padding */
+    margin-top: 20px; 
+    padding-right: 20px; 
     max-width: 200px;
   }
 
@@ -370,12 +335,12 @@ ul {
   .clothing-create input[type="file"],
   .clothing-create select,
   .clothing-create button {
-    font-size: 14px; /* Reduce font size for smaller screens */
+    font-size: 14px; 
   }
 
   .link {
-    font-size: 10px; /* Adjust font size for smaller screens */
-    margin-left: 5px; /* Adjust spacing between links for smaller screens */
+    font-size: 10px; 
+    margin-left: 5px; 
   }
 }
 ol {
@@ -385,8 +350,6 @@ ol {
   
 }
 
-
-/* Centering the login form */
 .login-container {
   display: flex;
   flex-direction: column;
@@ -399,10 +362,10 @@ ol {
 
 /* Styling the form */
 .login-form {
-  background-color: #fffcf7; /* Background color for the form */
+  background-color: #fffcf7; 
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2); /* Box shadow for the form */
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2); 
   text-align: center;
 }
 
@@ -422,8 +385,8 @@ ol {
 }
 
 .login-form button {
-  background-color: gray; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: gray; 
+  color: #fff; 
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -431,7 +394,7 @@ ol {
 }
 
 .login-form button:hover {
-  background-color: #474849; /* Button hover background color */
+  background-color: #474849; 
 }
 
 .clothing-body {
@@ -481,10 +444,10 @@ button {
 
 .hero-text {
   text-align: right;
-  color:#1e1b1b; /* Text color */
-  background-color: rgba(105, 104, 104, 0.2); /* Background color with transparency */
+  color:#1e1b1b; 
+  background-color: rgba(105, 104, 104, 0.2); 
   padding: 20px;
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 10px; 
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
 }
@@ -569,25 +532,24 @@ button {
 }  
 @media screen and (max-width: 700px) {
   .search-bars {
-    flex-wrap: wrap; /* Allow filters to wrap to the next row */
-    justify-content: flex-start; /* Align filters to the left */
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
     
-    font-size: 0.7rem; /* Reduce font size */
+    font-size: 0.7rem; 
     margin-top: 40px;
     
   }
-
   .search-bar {
-    flex-basis: 30%; /* Make each filter take up 50% of the row width */
-    max-width: 100%; /* Limit the maximum width */
-     /* Add spacing between filters */
+    flex-basis: 30%; 
+    max-width: 100%; 
+     
     margin-top: 5px;
   }
 
   .weather-search,
   .clothing-search {
-    flex-basis: 30%; /* Full width for each filter */
-    max-width: 100%; /* Limit the maximum width */
+    flex-basis: 30%; 
+    max-width: 100%; 
     padding: 3px;
     margin-left: 0;
     
@@ -598,7 +560,6 @@ button {
     margin-bottom: 15px;
   }
 
-
 }
 @media screen and (max-width: 500px) {
   .features > div > article {
@@ -606,13 +567,12 @@ button {
     margin: 0 auto;
   }
   .clothing-create {
-    padding: 20px; /* Add some padding to the container */
-    
+    padding: 20px; 
   }
 
   .clothing-create form {
-    margin-top: 20px; /* Reduce top margin */
-    padding-right: 20px; /* Reduce right padding */
+    margin-top: 20px; 
+    padding-right: 20px; 
     max-width: 300px;
   }
 
@@ -621,13 +581,13 @@ button {
   .clothing-create input[type="file"],
   .clothing-create select,
   .clothing-create button {
-    font-size: 14px; /* Reduce font size for smaller screens */
+    font-size: 14px; 
     padding-right: 25px;
   }
 
   .link {
-    font-size: 13px; /* Adjust font size for smaller screens */
-    margin-left: 5px; /* Adjust spacing between links for smaller screens */
+    font-size: 13px; 
+    margin-left: 5px; 
   }
 
   

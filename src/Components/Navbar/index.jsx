@@ -19,7 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import DryCleaningIcon from '@mui/icons-material/DryCleaning';
 import LuggageIcon from '@mui/icons-material/Luggage';
-import MoreIcon from '@mui/icons-material/MoreVert';
+
 
 
 
@@ -190,17 +190,7 @@ function Navbar() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="fixed" sx={{ backgroundColor: "#f8f8f8"}}>
           <Toolbar>
-            {/*}
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
-    */}
+     
             <Typography
               variant="h6"
               noWrap
@@ -235,47 +225,14 @@ function Navbar() {
              
             <CustomNavbar /> 
             </Box>
-         {/*   <Box sx={{ display: { xs: 'flex', md: 'flex' } }}>
-              <IconButton
-                size="large"
-                aria-label="show more"
-                aria-controls={mobileMenuId}
-                aria-haspopup="true"
-                onClick={handleMobileMenuOpen}
-                color="inherit"
-              >
-                <MoreIcon />
-              </IconButton>
-    </Box> */}
+        
           </Toolbar>
         </AppBar>
-      { /* {renderMobileMenu} */}
+     
         {renderMenu}
         
       </Box>
     );
 
-  
-   /* <nav>
-    <div>
-    <Link to="/">
-        <button>Home</button>
-    </Link>
-    </div>
-    {isLoggedIn? (
-      <div>
-        <button onClick={logOutUser}>Logout</button>
-        <p>{user && user.name}</p>
-      </div>
-    ): 
-    (
-      <div>
-        <Link to="/signup"><button>Signup</button></Link>
-        <Link to="/login"><button>Login</button></Link>
-      </div>
-    )
-  } 
-    </nav>*/
-  
 }
 export default Navbar;

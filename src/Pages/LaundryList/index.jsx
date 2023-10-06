@@ -38,10 +38,7 @@ function LaundryList() {
           },
         });
         setLaundry(response.data.laundry);
-        /* const response = await axios.get("/api/laundry");
-        if (response.status === 200) {
-          setLaundry(response.data);
-        } */
+      
       } catch (error) {
         console.error("Error getting laundry:", error);
       }
@@ -69,18 +66,12 @@ function LaundryList() {
     }
   };
 
-  // Function to remove all items from the laundry list
   const handleDeleteAll = async () => {
     try {
       const storedToken = localStorage.getItem("authToken");
 
-      // Step 1: Clear the laundry list in local storage
       localStorage.removeItem("laundryList");
-
-      // Step 2: Clear the laundry state in your component
       setLaundry([]);
-
-      // Step 3: Send a request to your backend to delete all items
       const response = await axios.delete(
         `${API_URL}/api/remove-from-laundry/all`,
         {
@@ -102,25 +93,6 @@ function LaundryList() {
       console.error("Error deleting laundry:", error);
     }
   };
-
-  {
-    /* const removeAllLaundryItems = async () => {
-    try {
-      const storedToken = localStorage.getItem("authToken");
-      await axios.delete(`${API_URL}/api/remove-from-laundry/all`, {
-        headers: {
-          Authorization: `Bearer ${storedToken}`,
-        },
-      });
-  
-      // After successfully removing all items, update the laundry list to an empty array
-      setLaundry([]);
-      console.log('All laundry items deleted successfully.');
-    } catch (error) {
-      console.error("Error removing all laundry items:", error);
-    }
-  };*/
-  }
 
   return (
     <div className="laundry-body">

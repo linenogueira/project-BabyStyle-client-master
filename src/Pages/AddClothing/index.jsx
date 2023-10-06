@@ -34,12 +34,10 @@ function AddClothing() {
     const file = e.target.files[0];
   
     if (!file) {
-      // Handle the case where no file is selected.
       return;
     }
   
     if (!allowedFormats.includes(file.type)) {
-      // Display an error message to the user for invalid format.
       console.log("Invalid image format. Please select a valid image file.");
       return;
     }
@@ -64,14 +62,10 @@ function AddClothing() {
       });
   };
 
-  // Handle Submit Function
   function handleSubmit(e) {
     e.preventDefault();
 
-    // If the user selected "upload," use the uploaded file
-    // If the user selected "URL," use the entered URL
     const imageToUse = imageOption === "upload" ? imageFile : imageUrl;
-
     const requestBody = {
       title,
       description,
@@ -182,7 +176,7 @@ function AddClothing() {
           />
         </label>
 
-        {/*Create select 7 options for type */}
+       
         <label>
           Type:
           <select
@@ -200,7 +194,7 @@ function AddClothing() {
             <option value="other">Other</option>
           </select>
         </label>
-        {/*Create select 3 options for season*/}
+       
         <label>
           Weather:
           <select
@@ -214,7 +208,7 @@ function AddClothing() {
             <option value="cold">Cold</option>
           </select>
         </label>
-        {/*Create  a label for care instructions*/}
+   
         <label>
           Care Instructions:
           <input
@@ -224,7 +218,7 @@ function AddClothing() {
             onChange={(e) => setCareInstructions(e.target.value)}
           />
         </label>
-        {/*Create label for size*/}
+      
         <label>
           Size:
           <input
