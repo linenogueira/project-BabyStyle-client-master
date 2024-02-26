@@ -99,7 +99,7 @@ function ClothingListPage() {
             <option value="cold">Cold</option>
           </select>
         </div>
-        <div class="clothing-filters search-bar clothing-search">
+        <div className="clothing-filters search-bar clothing-search">
           <label>Search:</label>
           <input
             type="text"
